@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Microservices Presentation</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h3>Microservices</h3>
+					Shayan Karimi
+				</section>
+				<section>
+					Monolithic Approach
+					<img src="assets/mono.png" alt="">
+				</section>
+				<section>
+					Microservice Approach
+					<img src="assets/micro.png" alt="">
+				</section>
+				<section>
+					<img src="https://memegenerator.net/img/instances/67973195.jpg" alt="">
+				</section>
+				<section>
+					<h3>Microservice Benefits</h3>
+					<div class="r-stack">
+						<p class="fragment fade-in-then-out">* Seperation of concerns</p>
+						<p class="fragment fade-in-then-out">* Smaller projects to deal with</p>
+						<p class="fragment fade-in-then-out">* More scaling and deployment options</p>
+					</div>
+				</section>
+				<section>
+					<h3>Pitfalls of microservices</h3>
+					<div class="r-stack">
+						<p class="fragment fade-in-then-out">* Illogical splitting</p>
+						<p class="fragment fade-in-then-out">* More network interactions</p>
+						<p class="fragment fade-in-then-out">* Data storing and sharing</p>
+						<p class="fragment fade-in-then-out">* Compatibillity issues</p>
+						<p class="fragment fade-in-then-out">
+							* Testing <br/>
+							<img src="assets/testing.png" alt="" width="400px">
+						</p>
+					</div>
+				</section>
+				<section>
+					<img src="https://i.kym-cdn.com/photos/images/original/001/142/233/897.gif" alt="">
+				</section>
+				<section>
+					<h3>Communication</h3>
+					<div class="r-stack">
+						<p class="fragment fade-in-then-out">* REST</p>
+						<p class="fragment fade-in-then-out">* gRPC (Google Remote Procedure Call</p>
+					</div>
+				</section>
+				<section>
+					<h3>gRPC</h3>
+					<div class="r-stack">
+						<p class="fragment fade-in-then-out">
+							<img src="https://grpc.io/img/landing-2.svg" alt="">
+						</p>
+						<p class="fragment fade-in-then-out">
+							* Protocol Buffers <br/>
+							<img src="assets/proto.png" alt="" width="450px" />
+						</p>
+						<p class="fragment fade-in-then-out">
+							* Endpoints ??? <br/>
+							<img src="https://grpc.io/img/grpc-web-arch.png" alt="">
+						</p>
+					</div>
+				</section>
+				<section>
+					<h3>API Gateway</h3>
+					<img src="https://docs.microsoft.com/en-us/azure/architecture/microservices/images/gateway.png" alt="">
+				</section>
+				<section>
+					<h3>More</h3>
+					<a href="https://microservices.io/patterns/microservices.html" target="_blank">
+						<img src="https://microservices.io/i/PatternsRelatedToMicroservices.jpg" alt="">
+					</a>
+				</section>
+				<section>
+					<img src="https://media.makeameme.org/created/any-questions-5cbb3c.jpg" alt="">
+				</section>
+				<section>
+					<img src="https://imgflip.com/s/meme/Leonardo-Dicaprio-Cheers.jpg" alt="">
+				</section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
